@@ -1,0 +1,104 @@
+* {
+
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+ 
+h1 {
+
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-form {
+width: 800px;
+height: 400px;
+padding: 20px;
+margin: 15px;
+background-color: wheat;
+border-radius: 10px;
+align-items: center;
+text-align: center;
+}
+
+.container input{
+width: 400px;
+padding: 12px 15px;
+ margin-bottom: 15px;
+ border-radius: 20px transparent;
+ border: 30px transparent;
+
+}
+
+.container input:hover{
+
+background-color: wheat;
+transition: 0.6s;
+
+}
+
+.container button {
+
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+   
+    margin: 15px;
+    cursor: pointer;
+   background-color: white;
+
+    
+}
+
+
+.container button:hover {
+
+background-color: wheat;
+transition: 0.6s;
+
+}
+
+
+.cont2{
+width: 300px;
+height: 400px;
+ background-color: darksalmon;
+ align-items: center;
+ border-radius: 10px;
+}
+
+p {
+
+    text-align: center;
+    margin: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.cont2 button {
+
+width: 110px;
+height: 30px;
+align-items: center;
+margin-left: 90px;
+margin-top: 150px;
+border-radius: 10px;
+}
+
+.cont2 button:hover {
+
+background-color: wheat;
+transition: 0.6s;
+cursor: pointer;
+
+}
+

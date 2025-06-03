@@ -1,0 +1,153 @@
+* {
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #169976, #222222);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pricingplan {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.li {
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.container {   
+width: 100%;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px 40px 20px;
+}
+
+.card {
+    background: #23272f;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+
+.card h2 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.price {
+    color: #169976;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    width: 100%;
+}
+
+.card ul li {
+    color: #e0e0e0;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+.card button {
+    width: 100%;
+    padding: 14px 0;
+    background: #169976;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s; 
+    margin-top: 12px;
+    letter-spacing: 1px;
+}
+
+.card button:hover {
+    background: #13b88a;
+    color: #23272f;
+}
+
+.featured {
+    background: #fff;
+    color: #169976;
+    border: 2px solid #169976;
+    box-shadow: 0 8px 32px rgba(22,153,118,0.15);
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.featured h2,
+.featured .price {
+    color: #169976;
+}
+
+.featured button {
+    background: #169976;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .card {
+        padding: 24px 12px 18px 12px;
+    }
+    .pp {
+        font-size: 2rem;
+    }
+    .li {
+        font-size: 1rem;
+    }
+}
+
+
